@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formtask.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" onsubmit="onsubmitbutton(event)">
+            <h1>FORM</h1>
+            <label for="fname">:</label>
+            <p id="n1"></p>
+            <input type="text" id="fname" name="name" placeholder="EnterYourName" >
+            <lable for="lname"></lable>
+            <input type="text" id="lname" name="name" placeholder="EnterYourLastName">
+            <lable for="email"></lable>
+            <input type="email" id="email" name="email" placeholder="EnterYourEmail">
+            <lable for="adress"></lable>
+            <input type="text" id="adress" name="adress" placeholder="EnterYourAdress">
+            <label for="pin"></label>
+            <input type="number" id="pin" name="pin" placeholder="Pincode">
+            <lable for="gender"></lable>
+            <input type="text" id="gender" name="gender" placeholder="Gender">
+            <lable for="food"></lable>
+            <select name="food" id="food">
+                <option value="food">Food</option>
+                <option value="biriyani">Biriyani</option>
+                <option value="idly">Idly</option>
+                <option value="dosa">Dosa</option>
+                <option value="sambar">sambar</option>
+                <option value="friedrice">FriedRice</option>
+            </select>
+            <label for="state"></label>
+            <input type="text" id="state" name="state" placeholder="state">
+            <lable for="country"></lable>
+            <input type="text" id="country" name="country" placeholder="country">
+            <button>Submit</button>
+            <table id="table">
+                <tr>
+                    <th>FirstName</th>
+                    <th>LasrName</th>
+                    <th>Email</th>
+                    <th>Adress</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+                <tr id="tdata">
+                    <td id="n"></td>
+                    <td id="l"></td>
+                    <td id="e"></td>
+                    <td id="a"></td>
+                    <td id="p"></td>
+                    <td id="g"></td>
+                    <td id="f"></td>
+                    <td id="s"></td>
+                    <td id="c"></td>
+                    
+                </tr>
+            </table>
+            <button id="cl" type="reset"onclick="clearfn()">clear</button>
+        </form>
+
+    </div>
+ <script src="formtask.js"></script>   
+</body>
+</html>
